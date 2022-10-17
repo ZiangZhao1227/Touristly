@@ -11,10 +11,9 @@ export const getEvents = async (
 ) => {
   try {
     const response = await axios.get(
-      "http://open-api.myhelsinki.fi/v1/events/?distance_filter=60.1699%2C24.9384%2C10&language_filter=en&limit=100"
+      "https://open-api.myhelsinki.fi/v1/events/?language_filter=en"
     );
-      const data = response.data()
-      res.status(200).json(data)
+    res.status(200).json(response.data.data)
   } catch (error) {
     console.log(error);
     res.status(500).send(error);
