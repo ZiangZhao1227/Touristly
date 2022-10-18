@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  .Places {
+    background-color: #001F33;
+    height: 100%;
+    color: white;
+    background-image: url('../../assets/place.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+  }
+  
+  
+  .Places h1 {
+    font-size: 10vw;
+    font-weight: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: .3s all ease;
+  }
+  
+  .placesSect h2 {
+    font-size: 5vw;
+    font-weight: 100;
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: .3s all ease;
+  }
+  
+  .placesSect {
+    width: 100%;
+    height: 100vh;
+    background-color: #001F33;
+    display: relative;
+  }

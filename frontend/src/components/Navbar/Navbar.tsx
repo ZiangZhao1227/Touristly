@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const ScrollToTop = () => {
@@ -20,16 +20,16 @@ const NavBar = () => {
             </label>
             <ul className="tab-content">
               <li>
-                <NavLink to="/home">Home</NavLink>
+                <Link to="/home">Home</Link>
               </li>
               <li>
-                <NavLink to="/places">Places</NavLink>
+                <Link to="/places">Places</Link>
               </li>
               <li>
-                <NavLink to="/events">Events</NavLink>
+                <Link to="/events">Events</Link>
               </li>
               <li>
-                <NavLink to="/activities">Activities</NavLink>
+                <Link to="/activities">Activities</Link>
               </li>
             </ul>
           </nav>

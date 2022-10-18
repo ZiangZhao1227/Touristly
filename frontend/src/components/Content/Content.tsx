@@ -2,6 +2,7 @@ import event from "../../assets/event.jpg";
 import activity from "../../assets/activity.jpg";
 import place from "../../assets/place.jpg";
 import "./Content.css";
+import { Link } from "react-router-dom";
 
 const Content = () => {
   return (
@@ -19,6 +20,9 @@ const Content = () => {
                 and around Helsinki. Data is frequently updated by local
                 businesses, locals and visitors alike.
               </p>
+              <Link className="Btn" to="/places">
+                Read more
+              </Link>
             </div>
 
             <div className="Card">
@@ -29,6 +33,9 @@ const Content = () => {
                 organizers including concerts, sports events, museum exhibitions
                 and many more.
               </p>
+              <Link className="Btn" to="/events">
+                Read more
+              </Link>
             </div>
 
             <div className="Card">
@@ -38,6 +45,9 @@ const Content = () => {
                 High-quality experiences from local service providers, including
                 for example archipelago cruises and city walking tours.
               </p>
+              <Link className="Btn" to="/activities">
+                Read more
+              </Link>
             </div>
           </div>
         </div>
