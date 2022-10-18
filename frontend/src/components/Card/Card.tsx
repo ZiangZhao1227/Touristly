@@ -1,22 +1,20 @@
-import { Link } from "react-router-dom";
+import { ReactNode } from "react";
 import "./Card.css";
 
 type Props = {
   src: string;
   CardTitle: string;
   CardDesc: string;
-  link: string;
+  action?: ReactNode;
 };
 
-const Card = ({ src, CardTitle, CardDesc, link }: Props) => {
+const Card = ({ src, CardTitle, CardDesc, action }: Props) => {
   return (
     <div className="Card">
       <img src={src} alt={`Helsinki ${CardTitle}`} />
       <h1>{CardTitle}</h1>
       <p>{CardDesc}</p>
-      <Link className="Btn" to={link}>
-        Read more
-      </Link>
+      {action && action}
     </div>
   );
 };

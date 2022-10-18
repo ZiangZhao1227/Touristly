@@ -19,7 +19,11 @@ const Content = () => {
               CardDesc={
                 "Over 2000 places of interest, restaurants, shops, hotels etc. in and around Helsinki. Data is frequently updated by local businesses, locals and visitors alike."
               }
-              link={"/places"}
+              action={
+                <Link className="Btn" to="/places">
+                  Read more
+                </Link>
+              }
             />
             <Card
               src={event}
@@ -27,7 +31,11 @@ const Content = () => {
               CardDesc={
                 "Frequently updated events from multiple cultural event organizers including concerts, sports events, museum exhibitions and many more."
               }
-              link={"/events"}
+              action={
+                <Link className="Btn" to="/events">
+                  Read more
+                </Link>
+              }
             />
             <Card
               src={activity}
@@ -35,7 +43,11 @@ const Content = () => {
               CardDesc={
                 "High-quality experiences from local service providers, including for example archipelago cruises and city walking tours."
               }
-              link={"/activities"}
+              action={
+                <Link className="Btn" to="/activities">
+                  Read more
+                </Link>
+              }
             />
           </div>
         </div>
