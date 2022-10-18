@@ -2,12 +2,18 @@ import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
+  const ScrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="NavBar">
       <header>
         <div className="nav-container">
           <nav className="nav-checkbox">
-            <h1>Touristly</h1>
+            <h1 onClick={ScrollToTop} className="name-nav">
+              Touristly
+            </h1>
             <input id="tab-nav" type="checkbox" className="tab-nav" />
             <label htmlFor="tab-nav" className="tab-nav-label">
               Menu
