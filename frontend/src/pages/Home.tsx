@@ -1,11 +1,11 @@
 import Header from "../components/Header/Header";
-import SectionOne from "../components/Content/Content";
+import Content from "../components/Content/Content";
 
 const Home = () => {
   return (
     <div>
       <Header title="Touristly" bgImage="Home" />
-      <SectionOne />
+      <Content />
     </div>
   );
 };
