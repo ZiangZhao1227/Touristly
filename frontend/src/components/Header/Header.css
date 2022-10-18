@@ -1,15 +1,44 @@
-.Header {
-background-image: url('../../assets/bg.jpg');
-background-size: cover;
-background-attachment: fixed;
-height: 100vh;
-color: white;
-font-family: 'Lato', sans-serif;
-position: relative;
+.Home {
+  background-image: url("../../assets/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  color: white;
+  font-family: "Lato", sans-serif;
+  position: relative;
 }
 
+.Event {
+  background-image: url("../../assets/event.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  color: white;
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
 
-.Header h1 {
+.Activity {
+  background-image: url("../../assets/activity.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  color: white;
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
+
+.Place {
+  background-image: url("../../assets/place.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  color: white;
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
+
+ .title {
   font-size: 10vw;
   font-weight: 100;
   position: absolute;
@@ -17,13 +46,11 @@ position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  transition: .3s all ease;
+  transition: 0.3s all ease;
 }
 
 .Overlay {
   display: block;
   height: 100vh;
   width: 100%;
-  
 }
-

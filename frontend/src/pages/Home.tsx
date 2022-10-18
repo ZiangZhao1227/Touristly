@@ -4,7 +4,7 @@ import SectionOne from "../components/Content/Content";
 const Home = () => {
   return (
     <div>
-      <Header />
+      <Header title="Touristly" bgImage="Home" />
       <SectionOne />
     </div>
   );

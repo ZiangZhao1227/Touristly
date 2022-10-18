@@ -1,10 +1,15 @@
 import "./Header.css";
 
-const Header = () => {
+type Props = {
+  title: string;
+  bgImage: string;
+};
+
+const Header = ({ title, bgImage }: Props) => {
   return (
-    <div id="Home" className="Header">
+    <div id="Header" className={bgImage}>
       <div className="Overlay">
-        <h1>Touristly</h1>
+        <h1 className="title">{title}</h1>
       </div>
     </div>
   );

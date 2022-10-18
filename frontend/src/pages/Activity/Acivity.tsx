@@ -1,13 +1,21 @@
-import "./Activity.css"
+import "./Activity.css";
+import Header from "../../components/Header/Header";
 
 const Acivity = () => {
   return (
-    <div className="Activities">
-      <div className="Overlay">
-        <h1>Upcoming Events</h1>
-      </div>
-    </div>
-  )
-}
+    <>
+      <Header title="Activities" bgImage="Activity" />
+      <div id="Content" className="Content">
+        <section>
+          <div id="Explore" className="Container">
+            <h1 className="Heading">Explore </h1>
 
-export default Acivity
+            <div className="Card-wrapper"></div>
+          </div>
+        </section>
+      </div>
+    </>
+  );
+};
+
+export default Acivity;

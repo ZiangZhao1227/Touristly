@@ -1,12 +1,20 @@
+import Header from "../../components/Header/Header";
 import "./Place.css";
 
 const Place = () => {
   return (
-    <div className="Places">
-      <div className="Overlay">
-        <h1>Places</h1>
+    <>
+      <Header title="Places" bgImage="Place" />
+      <div id="Content" className="Content">
+        <section>
+          <div id="Explore" className="Container">
+            <h1 className="Heading">Explore </h1>
+
+            <div className="Card-wrapper"></div>
+          </div>
+        </section>
       </div>
-    </div>
+    </>
   );
 };
 
