@@ -4,12 +4,11 @@ import noImage from "../../assets/noImage.jpeg";
 import useFetch from "../../hooks/useFetch";
 import { useState, useEffect } from "react";
 import { RootObject } from "../../@types";
-import PlaceDetails from "../../components/Card/PlaceDetails";
+import CardDetails from "../../components/Card/CardDetails";
 import { Grid, CircularProgress } from "@mui/material";
 
 const Place = () => {
   const { data, loading, error } = useFetch("api/v1/places");
-  console.log(data);
 
   const [placeData, setPlaceData] = useState<RootObject[]>([]);
 
@@ -31,7 +30,7 @@ const Place = () => {
                 {placeData &&
                   placeData.map((place) => (
                     <Grid key={place.id} item xs={12} md={4}>
-                      <PlaceDetails
+                      <CardDetails
                         key={place.id}
                         src={
                           place.description.images.length > 0
