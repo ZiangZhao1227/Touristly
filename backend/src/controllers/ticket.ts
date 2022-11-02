@@ -28,3 +28,28 @@ export const createTicket = async (
     res.status(500).send(error);
   }
 };
+
+// get a ticket
+
+export const getTickets = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  const newTicketId = req.query.ticketId
+  try {
+    const response = await axios.get(
+      `https://sales-api.hsl.fi/api/sandbox/ticket/v4/render?deviceId=test&ticketId=${newTicketId}`, {
+        headers: {
+          "X-API-Key": "f5c778db-145d-4c61-833c-8dc039376005",
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+      }
+    );
+    res.status(200).json(response.data)
+  } catch (error) {
+    console.log(error);
+    res.status(500).send(error);
+  }
+};
