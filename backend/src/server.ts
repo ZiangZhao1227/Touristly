@@ -9,6 +9,7 @@ import errorHandler from "./middlewares/error";
 import placeRouter from "./routes/place";
 import activityRouter from "./routes/activity";
 import eventRouter from "./routes/event";
+import ticketRouter from "./routes/ticket"
 
 dotenv.config();
 const app = express();
@@ -22,6 +23,7 @@ app.use(loggerHandler);
 app.use("/api/v1/places", placeRouter)
 app.use("/api/v1/activities", activityRouter)
 app.use("/api/v1/events", eventRouter)
+app.use("/api/v1/tickets", ticketRouter)
 
 app.use(errorHandler.unknownEndpoint);
 app.use(errorHandler.generalError);
