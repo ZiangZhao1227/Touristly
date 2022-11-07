@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Place from "./pages/Place/Place";
 import Acivity from "./pages/Activity/Acivity";
 import Event from "./pages/Event/Event";
+import Ticket from "./pages/Ticket/Ticket";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="places" element={<Place />} />
           <Route path="events" element={<Event />} />
           <Route path="activities" element={<Acivity />} />
+          <Route path="tickets" element={<Ticket />} />
         </Route>
       </Routes>
     </Router>

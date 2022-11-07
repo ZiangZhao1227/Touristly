@@ -31,6 +31,9 @@ const NavBar = () => {
               <li>
                 <Link to="/activities">Activities</Link>
               </li>
+              <li>
+                <Link to="/tickets">Buy tickets</Link>
+              </li>
             </ul>
           </nav>
         </div>
