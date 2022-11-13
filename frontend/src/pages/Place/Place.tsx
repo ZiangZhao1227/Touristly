@@ -42,6 +42,7 @@ const Place = () => {
                         website={place.info_url}
                         description={place.description.body}
                         address={place.location.address.street_address}
+                        placeTags={place.tags}
                       />
                     </Grid>
                   ))}

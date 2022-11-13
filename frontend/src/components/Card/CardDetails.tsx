@@ -14,6 +14,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EuroIcon from "@mui/icons-material/Euro";
 import BusinessIcon from "@mui/icons-material/Business";
 import { styled } from "@mui/material/styles";
+import { Tag } from "../../@types";
 
 // ----------------------------------------------------------------------
 
@@ -55,6 +56,7 @@ type Props = {
     email: string;
     phone: string;
   };
+  placeTags?: Tag[];
 };
 
 // ----------------------------------------------------------------------
@@ -69,6 +71,7 @@ const PlaceDetails = ({
   company,
   price,
   tags,
+  placeTags,
 }: Props) => {
   return (
     <Card
@@ -126,6 +129,10 @@ const PlaceDetails = ({
 
           {tags?.map((tag) => (
             <ChipStyle key={tag} size="small" label={tag} />
+          ))}
+
+          {placeTags?.map((tag) => (
+            <ChipStyle key={tag.id} size="small" label={tag.name} />
           ))}
 
           <SpacingStyle variant="body2" color="textSecondary">

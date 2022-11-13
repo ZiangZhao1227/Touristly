@@ -54,7 +54,6 @@ export interface RootObject {
   description: Description;
   tags: Tag[];
   extra_searchwords: string[];
-  openingHoursUrl: string;
 }
 
 export interface ActivityObject {
