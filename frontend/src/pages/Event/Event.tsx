@@ -12,8 +12,6 @@ const Event = () => {
 
   const [eventData, setEventData] = useState<RootObject[]>([]);
 
-  console.log(data);
-
   useEffect(() => {
     setEventData(data || []);
   }, [data]);
