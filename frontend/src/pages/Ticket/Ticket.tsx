@@ -1,11 +1,12 @@
 import "./Ticket.css";
-import { Button, Container, Box } from "@mui/material";
-import { useState} from "react";
-
+import { Button, Container, Box, Stack } from "@mui/material";
+import { useState } from "react";
 import RenderTicket from "./RenderTicket";
+import BasicSelect from "../../components/Select/BasicSelect";
 
 const Ticket = () => {
   const [ticketId, setTicketId] = useState("");
+  const [zone, setZones] = useState("AB");
 
   const handleClick = async () => {
     try {
@@ -19,7 +20,7 @@ const Ticket = () => {
           phoneNumber: "+358501231234",
           ticketTypeId: "single",
           customerTypeId: "adult",
-          zones: "AB",
+          zones: zone,
         }),
       });
       const data = await response.json();
@@ -35,12 +36,23 @@ const Ticket = () => {
         <section>
           <Container>
             <h1 className="Heading">Order tickets</h1>
-            <Box display="flex" justifyContent="center" alignItems="center">
-              <Button variant="contained" onClick={handleClick}>
+            <Stack
+              flexDirection="column"
+              justifyContent="center"
+              alignItems="center"
+              spacing={3}
+            >
+              {" "}
+              <BasicSelect zone={zone} setZones={setZones} />
+              <Button
+                variant="contained"
+                onClick={handleClick}
+                sx={{ minWidth: 450 }}
+              >
                 Order from HSL
               </Button>
-            </Box>
-            <RenderTicket ticketId={ticketId} />
+              <RenderTicket ticketId={ticketId} zone={zone} />
+            </Stack>
           </Container>
         </section>
       </div>
