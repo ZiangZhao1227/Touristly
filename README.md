@@ -1,19 +1,72 @@
 # Touristly
 
-Touristly is a fullstack project. Through Touristly, users are able to browse for details and information about most of the popular places around Helsinki area.
+Tourstly is a fullstack workshop project for the metropolia innovation project course. The main goal of the project is to explore the applicability of MyHelsinki Open API and HSL API. Through Touristly, users are able to browse for details and information about most of the popular places around Helsinki area.
 
 ## Tech stack & Open-source libraries  
-- Typescript
+
+- [Typescript](https://www.typescriptlang.org/)
+- [React](https://reactjs.org/)
 - [HSL API](https://sales-api.hsl.fi/)
 - [MyHelsinki Open API](https://open-api.myhelsinki.fi/)
 - [MUI](https://mui.com/)
 - Express.js
 - Node.js
-- Axios
-- React Router Dom
+- [Axios](https://axios-http.com/docs/intro)
+- [React-Router-Dom](https://v5.reactrouter.com/web/guides/quick-start)
 - CSS
-- React Library
 - Custom hook
+
+## Installation
+
+- Clone the repo
+
+  ```sh
+  git clone https://github.com/repo_name/Project-Name.git
+  ```
+
+- Swtich to the correct folder
+
+  ```sh
+  cd project-folder
+  ```
+  
+- Swtich to the frontend and backend folder seperatly and run npm install / yarn install
+
+  ```sh
+  cd frontend
+  ```  
+    ```sh
+  npm install / yarn install
+  ```
+  
+  and 
+  
+  ```sh
+  cd backend
+  ```  
+   ```sh
+  npm install / yarn install
+  ```
+
+- Some dependent packages will give error and cannot be installed, you can install like
+
+  ```sh
+  npm install --legacy-peer-deps
+  ```
+
+### Start
+
+- Once the installation is done, you can now start the project by running.
+
+  ```sh
+  npm start
+  ```
+
+  or
+
+  ```sh
+  yarn start
+  ```
 
 ## Getting Started with Create React App
 
